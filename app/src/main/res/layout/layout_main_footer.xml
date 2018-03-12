@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FooterLayout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/main_footer_bg">
+
+    <!--<view-->
+        <!--android:id="@+id/viewSplit"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#EDEDED" />-->
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/foot_bar_home"
+            style="@style/main_footer_bar_radio"
+            android:checked="true"
+            android:drawableTop="@drawable/btn_home"
+            android:text="@string/main_navigation_home"
+            />
+
+        <RadioButton
+            android:id="@+id/foot_bar_plan"
+            style="@style/main_footer_bar_radio"
+            android:checked="true"
+            android:text="计划" />
+
+        <RadioButton
+           android:id="@+id/foot_bar_camera"
+            style="@style/main_footer_bar_radio"
+            android:checked="true"
+            android:text="摄像" />
+
+        <RadioButton
+            android:id="@+id/foot_bar_user"
+            style="@style/main_footer_bar_radio"
+            android:checked="true"
+            android:text="我的" />
+    </RadioGroup>
+</RelativeLayout>

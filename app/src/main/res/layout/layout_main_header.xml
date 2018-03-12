@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="48dip"
+    android:background="#57faff"
+    >
+
+    <!-- 返回按钮 -->
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textViewCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/title_base_button"
+        android:background="@drawable/btn_back"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textHeadTitle"
+        style="@style/main_head_title"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:maxWidth="180dp"
+        android:singleLine="true"
+        android:text="首页"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text_size_20" />
+
+    <ImageButton
+        android:id="@+id/myTransInfo"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="12dp"
+        android:background="@mipmap/header_msg"
+        android:visibility="gone" />
+
+</RelativeLayout>

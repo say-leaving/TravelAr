@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name"></string>
+
+    <string name="main_navigation_home">首页</string>
+</resources>
